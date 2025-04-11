@@ -1,0 +1,363 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "brand": "Ford",
+      "model": "Mustang",
+      "productionYear": "2024",
+      "engine": "4900"
+    },
+    {
+      "id": "2",
+      "brand": "BMW",
+      "model": "M3",
+      "productionYear": "2024",
+      "engine": "2900"
+    },
+    {
+      "id": "3",
+      "brand": "Audi",
+      "model": "RS6",
+      "productionYear": "2024",
+      "engine": "4000"
+    },
+    {
+      "id": "4",
+      "brand": "BMW",
+      "model": "M3",
+      "productionYear": "2023",
+      "engine": "3000"
+    },
+    {
+      "id": "5",
+      "brand": "Mercedes",
+      "model": "AMG C63",
+      "productionYear": "2024",
+      "engine": "4000"
+    },
+    {
+      "id": "6",
+      "brand": "Toyota",
+      "model": "Supra",
+      "productionYear": "2022",
+      "engine": "3000"
+    },
+    {
+      "id": "7",
+      "brand": "Audi",
+      "model": "A7",
+      "productionYear": "2023",
+      "engine": "3500"
+    },
+    {
+      "id": "8",
+      "brand": "Chevrolet",
+      "model": "Corvette",
+      "productionYear": "2021",
+      "engine": "6200"
+    },
+    {
+      "id": "9",
+      "brand": "Ford",
+      "model": "Mustang GT",
+      "productionYear": "2022",
+      "engine": "5000"
+    },
+    {
+      "id": "10",
+      "brand": "Porsche",
+      "model": "911",
+      "productionYear": "2023",
+      "engine": "3800"
+    },
+    {
+      "id": "11",
+      "brand": "Lamborghini",
+      "model": "Huracan",
+      "productionYear": "2024",
+      "engine": "5200"
+    },
+    {
+      "id": "12",
+      "brand": "Ferrari",
+      "model": "F8 Tributo",
+      "productionYear": "2023",
+      "engine": "3900"
+    },
+    {
+      "id": "13",
+      "brand": "Maserati",
+      "model": "Levante",
+      "productionYear": "2024",
+      "engine": "3300"
+    },
+    {
+      "id": "14",
+      "brand": "Jaguar",
+      "model": "F-Type",
+      "productionYear": "2021",
+      "engine": "5000"
+    },
+    {
+      "id": "15",
+      "brand": "Nissan",
+      "model": "GT-R",
+      "productionYear": "2022",
+      "engine": "3800"
+    },
+    {
+      "id": "16",
+      "brand": "Aston Martin",
+      "model": "DB11",
+      "productionYear": "2023",
+      "engine": "5000"
+    },
+    {
+      "id": "17",
+      "brand": "Bentley",
+      "model": "Continental GT",
+      "productionYear": "2022",
+      "engine": "6000"
+    },
+    {
+      "id": "18",
+      "brand": "Rolls-Royce",
+      "model": "Phantom",
+      "productionYear": "2021",
+      "engine": "6750"
+    },
+    {
+      "id": "19",
+      "brand": "Bugatti",
+      "model": "Chiron",
+      "productionYear": "2024",
+      "engine": "8000"
+    },
+    {
+      "id": "20",
+      "brand": "Koenigsegg",
+      "model": "Jesko",
+      "productionYear": "2023",
+      "engine": "5000"
+    },
+    {
+      "id": "21",
+      "brand": "Pagani",
+      "model": "Huayra",
+      "productionYear": "2022",
+      "engine": "6000"
+    },
+    {
+      "id": "22",
+      "brand": "Alfa Romeo",
+      "model": "Giulia Quadrifoglio",
+      "productionYear": "2021",
+      "engine": "2900"
+    },
+    {
+      "id": "23",
+      "brand": "Mazda",
+      "model": "MX-5 Miata",
+      "productionYear": "2023",
+      "engine": "2000"
+    },
+    {
+      "id": "24",
+      "brand": "Subaru",
+      "model": "WRX STI",
+      "productionYear": "2022",
+      "engine": "2500"
+    },
+    {
+      "id": "25",
+      "brand": "Honda",
+      "model": "Civic Type R",
+      "productionYear": "2024",
+      "engine": "2000"
+    },
+    {
+      "id": "26",
+      "brand": "Hyundai",
+      "model": "Veloster N",
+      "productionYear": "2023",
+      "engine": "2500"
+    },
+    {
+      "id": "27",
+      "brand": "Kia",
+      "model": "Stinger GT",
+      "productionYear": "2022",
+      "engine": "3300"
+    },
+    {
+      "id": "28",
+      "brand": "Volkswagen",
+      "model": "Golf R",
+      "productionYear": "2023",
+      "engine": "2000"
+    },
+    {
+      "id": "29",
+      "brand": "BMW",
+      "model": "X5 M",
+      "productionYear": "2024",
+      "engine": "4400"
+    },
+    {
+      "id": "30",
+      "brand": "Mercedes",
+      "model": "GLS 63 AMG",
+      "productionYear": "2023",
+      "engine": "5500"
+    },
+    {
+      "id": "31",
+      "brand": "Tesla",
+      "model": "Model S Plaid",
+      "productionYear": "2024",
+      "engine": "Electric"
+    },
+    {
+      "id": "32",
+      "brand": "Rivian",
+      "model": "R1T",
+      "productionYear": "2024",
+      "engine": "Electric"
+    },
+    {
+      "id": "33",
+      "brand": "Lucid",
+      "model": "Air",
+      "productionYear": "2023",
+      "engine": "Electric"
+    },
+    {
+      "id": "34",
+      "brand": "Ford",
+      "model": "F-150 Lightning",
+      "productionYear": "2022",
+      "engine": "Electric"
+    },
+    {
+      "id": "35",
+      "brand": "Chevrolet",
+      "model": "Bolt EV",
+      "productionYear": "2023",
+      "engine": "Electric"
+    },
+    {
+      "id": "36",
+      "brand": "Audi",
+      "model": "e-tron GT",
+      "productionYear": "2024",
+      "engine": "Electric"
+    },
+    {
+      "id": "37",
+      "brand": "Jaguar",
+      "model": "I-PACE",
+      "productionYear": "2022",
+      "engine": "Electric"
+    },
+    {
+      "id": "38",
+      "brand": "BMW",
+      "model": "iX",
+      "productionYear": "2023",
+      "engine": "Electric"
+    },
+    {
+      "id": "39",
+      "brand": "Porsche",
+      "model": "Taycan",
+      "productionYear": "2024",
+      "engine": "Electric"
+    },
+    {
+      "id": "40",
+      "brand": "Hyundai",
+      "model": "Ioniq 5",
+      "productionYear": "2023",
+      "engine": "Electric"
+    },
+    {
+      "id": "41",
+      "brand": "Kia",
+      "model": "EV6",
+      "productionYear": "2022",
+      "engine": "Electric"
+    },
+    {
+      "id": "42",
+      "brand": "Nissan",
+      "model": "Ariya",
+      "productionYear": "2023",
+      "engine": "Electric"
+    },
+    {
+      "id": "43",
+      "brand": "Mercedes",
+      "model": "EQS",
+      "productionYear": "2024",
+      "engine": "Electric"
+    },
+    {
+      "id": "44",
+      "brand": "Tesla",
+      "model": "Model X",
+      "productionYear": "2023",
+      "engine": "Electric"
+    },
+    {
+      "id": "45",
+      "brand": "Audi",
+      "model": "Q4 e-tron",
+      "productionYear": "2022",
+      "engine": "Electric"
+    },
+    {
+      "id": "46",
+      "brand": "BMW",
+      "model": "i4",
+      "productionYear": "2023",
+      "engine": "Electric"
+    },
+    {
+      "id": "47",
+      "brand": "Ford",
+      "model": "Mach-E",
+      "productionYear": "2022",
+      "engine": "Electric"
+    },
+    {
+      "id": "48",
+      "brand": "Volkswagen",
+      "model": "ID.4",
+      "productionYear": "2023",
+      "engine": "Electric"
+    },
+    {
+      "id": "49",
+      "brand": "Volvo",
+      "model": "XC40 Recharge",
+      "productionYear": "2022",
+      "engine": "Electric"
+    },
+    {
+      "id": "50",
+      "brand": "Mini",
+      "model": "Cooper SE",
+      "productionYear": "2024",
+      "engine": "Electric"
+    }
+  ],
+  "favorites_cars": [
+    {
+      "id": "1",
+      "brand": "Ford",
+      "model": "Mustang",
+      "productionYear": "2024",
+      "engine": "4900"
+    }
+  ]
+}
