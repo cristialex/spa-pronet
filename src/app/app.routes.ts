@@ -53,6 +53,18 @@ export const routes: Routes = [
         ],
       },
       {
+        path: `${PageUrlEnum.Cars}/:id`,
+        loadComponent: () =>
+          import('./cars/car-details/car-details.component').then(
+            (m) => m.CarDetailsComponent
+          ),
+        canActivate: [carDetailsGuard],
+        providers: [
+          provideState(CarFeatureKey, carReducer),
+          provideEffects(CarEffects),
+        ],
+      },
+      {
         path: `${PageUrlEnum.FavoriteCars}/:id`,
         loadComponent: () =>
           import('./cars/car-details/car-details.component').then(

@@ -31,6 +31,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatButtonModule } from '@angular/material/button';
 //services
 import { AllCarsService } from './all-cars.service';
 //models
@@ -50,6 +51,7 @@ import { PageUrlEnum, ParentUrlEnum } from '@models/page-url.model';
     MatTooltipModule,
     ReactiveFormsModule,
     MatProgressSpinnerModule,
+    MatButtonModule,
   ],
   providers: [AllCarsService],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -136,7 +138,7 @@ export class AllCarsComponent implements OnInit, AfterViewInit {
           }
 
           this.notification(
-            res.added ? 'Added to favorites' : 'Removed from favorites'
+            res.added ? 'Added to favorite' : 'Removed from favorite'
           );
         })
       )
@@ -145,7 +147,9 @@ export class AllCarsComponent implements OnInit, AfterViewInit {
 
   seeDetails(car: Car) {
     this.router.navigate([
-      `${ParentUrlEnum.Dashboard}/${PageUrlEnum.Cars}/${car.id}`,
+      `./${ParentUrlEnum.Dashboard}/${
+        this.isFavoritePage ? PageUrlEnum.FavoriteCars : PageUrlEnum.Cars
+      }/${car.id}`,
     ]);
   }
 
@@ -153,6 +157,7 @@ export class AllCarsComponent implements OnInit, AfterViewInit {
     this._snackBar.open(msg, 'X', {
       horizontalPosition: 'right',
       verticalPosition: 'top',
+      duration: 2000,
     });
   }
 

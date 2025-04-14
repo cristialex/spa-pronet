@@ -1,21 +1,29 @@
 <div class="home-page">
   <header class="header">
-    <mat-icon aria-hidden="false" (click)="login()">login</mat-icon>
+    <button (click)="login()" mat-mini-fab aria-label="account_circle">
+      <mat-icon>account_circle</mat-icon>
+    </button>
   </header>
 
   <div class="main-content">Find Your Perfect Car Today</div>
 
   <footer class="footer">
     <div class="footer-item">
-      <mat-icon aria-hidden="false">directions_car</mat-icon>
+      <button mat-icon-button aria-label="car">
+        <mat-icon>directions_car</mat-icon>
+      </button>
       <div class="mobile-message">Wide Selection</div>
     </div>
     <div class="footer-item">
-      <mat-icon aria-hidden="false">verified</mat-icon>
+      <button mat-icon-button aria-label="verified">
+        <mat-icon>verified</mat-icon>
+      </button>
       <div class="mobile-message">Verified Listings</div>
     </div>
     <div class="footer-item">
-      <mat-icon aria-hidden="false">devices</mat-icon>
+      <button mat-icon-button aria-label="devices">
+        <mat-icon>devices</mat-icon>
+      </button>
       <div class="mobile-message">User Friendly Interface</div>
     </div>
   </footer>

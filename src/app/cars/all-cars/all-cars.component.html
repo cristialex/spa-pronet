@@ -8,25 +8,37 @@
   <cdk-virtual-scroll-viewport itemSize="90">
     <div class="align-items">
       <div *cdkVirtualFor="let car of cars()" class="car-card">
-        <mat-icon
-          matTooltip="Add to favorite"
-          [ngClass]="{ 'is-favorite': car.isFavorite }"
-          aria-hidden="false"
-          fontIcon="favorite"
+        <button
           (click)="markAsFavorite(car)"
-        ></mat-icon>
+          [matTooltip]="
+            !car.isFavorite ? 'Add to favorite' : 'Remove from favorite'
+          "
+          mat-icon-button
+          aria-label="favorite"
+        >
+          <mat-icon
+            [ngClass]="{
+              'is-favorite': car.isFavorite,
+            }"
+            >favorite</mat-icon
+          >
+        </button>
+
         <div>Brand: {{ car.brand }}</div>
         <div>Model: {{ car.model }}</div>
         <div>
           Year:
           {{ car.productionYear }}
         </div>
-        <mat-icon
-          matTooltip="Car details"
-          aria-hidden="false"
-          fontIcon="read_more"
+
+        <button
           (click)="seeDetails(car)"
-        ></mat-icon>
+          matTooltip="Car details"
+          mat-icon-button
+          aria-label="read_more"
+        >
+          <mat-icon>read_more</mat-icon>
+        </button>
       </div>
     </div>
   </cdk-virtual-scroll-viewport>

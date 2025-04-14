@@ -96,6 +96,7 @@ export class LoginComponent {
           this._snackBar.open('Something went wrong, please try again', 'X', {
             horizontalPosition: 'right',
             verticalPosition: 'top',
+            duration: 2000,
           });
         })
       )

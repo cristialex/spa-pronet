@@ -30,7 +30,7 @@ export class ApplicationInterceptor implements http.HttpInterceptor {
           {
             horizontalPosition: 'right',
             verticalPosition: 'top',
-            duration: 1000,
+            duration: 2000,
           }
         );
         return throwError(() => error);

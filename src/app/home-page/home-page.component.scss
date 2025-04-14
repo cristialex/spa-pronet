@@ -10,11 +10,14 @@
   justify-content: flex-end;
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
-  padding: 24px;
+  padding: 12px 24px;
   mat-icon {
     cursor: pointer;
   }
   opacity: 0.7;
+  mat-icon {
+    color: #209eff;
+  }
 }
 
 .footer {
@@ -22,8 +25,11 @@
   justify-content: space-between;
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
-  padding: 24px;
+  padding: 12px 24px;
   opacity: 0.7;
+  mat-icon {
+    color: white;
+  }
 }
 
 .main-content {
