@@ -1,0 +1,9 @@
+<div class="navigation">
+  @for(item of navigationConfig(); track item.title; let index = $index) {
+  <button mat-button [class.active]="item.selected" (click)="changeView(item)">
+    {{ item.title }}
+  </button>
+  }
+  <mat-icon aria-hidden="false" (click)="logout()">logout</mat-icon>
+</div>
+<router-outlet />

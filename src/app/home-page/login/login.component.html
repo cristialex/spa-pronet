@@ -1,0 +1,33 @@
+<h2 mat-dialog-title>Login</h2>
+<mat-dialog-content [formGroup]="loginForm">
+  <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input formControlName="email" matInput placeholder="Email" required />
+    @if(loginForm.get('email')?.hasError('required')){
+    <mat-error> Email is required</mat-error>
+    } @if(loginForm.get('email')?.hasError('pattern')) {
+    <mat-error> Email is invalid</mat-error>
+    }
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input
+      formControlName="password"
+      matInput
+      type="password"
+      placeholder="Password"
+      required
+    />
+    @if(loginForm.get('password')?.hasError('required')) {
+    <mat-error> Password is required</mat-error>
+    } @if(loginForm.get('password')?.hasError('pattern')) {
+    <mat-error>Password must be between</mat-error>
+    }
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-stroked-button mat-dialog-close>Cancel</button>
+  <button mat-stroked-button [disabled]="loginForm.invalid" (click)="login()">
+    Login
+  </button>
+</mat-dialog-actions>

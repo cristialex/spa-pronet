@@ -1,0 +1,27 @@
+.car-details {
+  height: calc(100vh - 78px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-card {
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  color: white;
+  div {
+    font-size: 18px;
+  }
+}
+
+.is-favorite {
+  color: #209eff;
+}

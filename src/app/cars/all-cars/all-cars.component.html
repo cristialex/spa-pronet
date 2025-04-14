@@ -1,0 +1,40 @@
+<div class="search-input">
+  <input [formControl]="searchControl" matInput placeholder="Search by model" />
+</div>
+<div
+  class="cars-container"
+  [ngClass]="{ 'display-none': !loading() && cars().length === 0 }"
+>
+  <cdk-virtual-scroll-viewport itemSize="90">
+    <div class="align-items">
+      <div *cdkVirtualFor="let car of cars()" class="car-card">
+        <mat-icon
+          matTooltip="Add to favorite"
+          [ngClass]="{ 'is-favorite': car.isFavorite }"
+          aria-hidden="false"
+          fontIcon="favorite"
+          (click)="markAsFavorite(car)"
+        ></mat-icon>
+        <div>Brand: {{ car.brand }}</div>
+        <div>Model: {{ car.model }}</div>
+        <div>
+          Year:
+          {{ car.productionYear }}
+        </div>
+        <mat-icon
+          matTooltip="Car details"
+          aria-hidden="false"
+          fontIcon="read_more"
+          (click)="seeDetails(car)"
+        ></mat-icon>
+      </div>
+    </div>
+  </cdk-virtual-scroll-viewport>
+</div>
+@if(!loading() && cars().length === 0){
+<div class="no-cars">No Cars</div>
+} @if(loading()){
+<div class="loading">
+  <mat-spinner [diameter]="60"></mat-spinner>
+</div>
+}

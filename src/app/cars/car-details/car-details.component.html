@@ -1,0 +1,23 @@
+<div class="car-details">
+  <div class="car-card">
+    @if(car()) {
+    <mat-icon
+      matTooltip="Add to favorite"
+      [ngClass]="{ 'is-favorite': car()?.isFavorite }"
+      aria-hidden="false"
+      fontIcon="favorite"
+    ></mat-icon>
+    <div>Brand: {{ car()?.brand }}</div>
+    <div>Model: {{ car()?.model }}</div>
+    <div>
+      Year:
+      {{ car()?.productionYear }}
+    </div>
+    <div>Engine: {{ car()?.engine | number : "4." }}</div>
+    <div>Horsepower: {{ car()?.horsepower | number : "4." }}</div>
+    <div>Width: {{ car()?.width | number : "4." }}</div>
+    <div>Height :{{ car()?.height | number : "4." }}</div>
+    <div>Kg: {{ car()?.kg | number : "4." }}</div>
+    }
+  </div>
+</div>
