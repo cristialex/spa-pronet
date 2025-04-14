@@ -25,3 +25,24 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Additional used technologies
+Angular Material for design
+Ngrx for state management
+crypto-js for local storage encryption
+
+## Start App
+Run npm i
+Run npm run start or ng serve
+Run npx json-server db.json 
+
+## Details
+The application features a homepage with a basic login system.
+To log in, please use the following credentials:
+Email: test@user.com
+Password: Must be 6–30 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character (e.g., TestTest123!).
+Upon successful login, users are redirected to the Cars page. This page displays a list of cars, including both favorite and non-favorite entries. Users can mark or unmark cars as favorites.
+Each car listing includes a "See More" icon, which navigates to a detailed view of the selected car.
+Clicking the Favorites button will navigate to the Favorites page, where only favorite cars are displayed. From here, users can also unmark cars as favorites.
+Additionally, users can search for cars by model using the search functionality.
+A Logout icon is available, which clears local storage and redirects users back to the homepage.
