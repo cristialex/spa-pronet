@@ -4,6 +4,7 @@ import { Router, RouterOutlet } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 //models
 import { PageUrlEnum, ParentUrlEnum } from '@models/page-url.model';
 import { LocalStorageKeysEnum } from '@models/local-storage.model';
@@ -13,7 +14,13 @@ import { LocalStorageService } from '@root/local-storage.service';
 @Component({
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
-  imports: [MatToolbarModule, MatButtonModule, RouterOutlet, MatIconModule],
+  imports: [
+    MatToolbarModule,
+    MatButtonModule,
+    RouterOutlet,
+    MatIconModule,
+    MatTooltipModule,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavigationComponent {

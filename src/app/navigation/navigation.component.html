@@ -4,6 +4,13 @@
     {{ item.title }}
   </button>
   }
-  <mat-icon aria-hidden="false" (click)="logout()">logout</mat-icon>
+  <button
+    matTooltip="Log out"
+    (click)="logout()"
+    mat-mini-fab
+    aria-label="logout"
+  >
+    <mat-icon>logout</mat-icon>
+  </button>
 </div>
 <router-outlet />
