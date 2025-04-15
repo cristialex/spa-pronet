@@ -210,6 +210,7 @@ export class AllCarsComponent implements OnInit, AfterViewInit {
         tap((res) => {
           this.searchParams._page = 1;
           if (res.data.length > 0) {
+            this.cars.set([]);
             this.searchResults(res);
             return;
           }
